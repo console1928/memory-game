@@ -10,4 +10,4 @@
 
 — при несовпадении пары вычитается число раскрытых пар, умноженное на 42.
 
-https://cdn.rawgit.com/console1928/memory-game/20f51893/index.html
+https://cdn.rawgit.com/console1928/memory-game/4171d6b6/index.html
