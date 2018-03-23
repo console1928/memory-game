@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memory game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:600,700">
+</head>
+
+<body>
+    <audio class="flip-sound"><source src="sounds/flipcard.mp3" type="audio/mpeg"></audio>
+    <audio class="endgame-sound"><source src="sounds/winner.mp3" type="audio/mpeg"></audio>
+    <main class="memory-game" data-tid="App">
+        <div class="start-screen">
+            <figure class="start-screen__image"><img src="images/startgame.png" alt="Cards" width="501" height="257" srcset="images/startgame@2x.png 2x"></figure>
+            <h1 class="start-screen__title">MEMORY GAME</h1>
+            <button class="start-screen__button button" data-tid="NewGame-startGame">Начать игру</button>
+        </div>
+        <div class="game-screen">
+            <div class="game-screen__menu">
+                <button class="game-screen__button button" data-tid="Menu-newGame">Начать заново</button>
+                <span class="game-screen__score" data-tid="Menu-scores">0</span><span class="game-screen__score-title">Очки: </span>
+            </div>
+            <div class="game-screen__deck" data-tid="Deck">
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="card__container">
+                        <figure class="card__content card__content--front" data-tid="Card"></figure>
+                        <figure class="card__content card__content--back" data-tid="Card-flipped"></figure>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="end-screen">
+            <figure class="end-screen__image"><img src="images/EndGame.png" alt="Flipped cards" width="508" height="266" srcset="images/endgame@2x.png 2x"></figure>
+            <h2 class="end-screen__message"></h2>
+            <button class="end-screen__button button" data-tid="EndGame-retryGame">Еще раз</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
