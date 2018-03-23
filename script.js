@@ -90,6 +90,11 @@ var memoryGame = {
     }())
 };
 
+memoryGame.cards.forEach(function (card) {
+    var image = new Image();
+    image.src = "images/" + card + ".png";
+});
+
 document.querySelector(".memory-game").addEventListener('click', function (event) {
     if (event.target.classList.contains("button")) {
         memoryGame.init();
